@@ -1,7 +1,5 @@
 /vendor/
 /bin/
-Vagrantfile
-/vagrant
 .vagrant
 /private
 /web/typo3temp

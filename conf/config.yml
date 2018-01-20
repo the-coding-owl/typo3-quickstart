@@ -1,0 +1,16 @@
+imports:
+    - { resource: config.*.yml }
+
+DB:
+    Connections:
+        Default:
+            dbname: '%env(TYPO3_INSTALL_DB_NAME)%'
+            driver: 'mysqli'
+            host: 'localhost'
+            username: '%env(TYPO3_INSTALL_DB_USER)%'
+            password: '%env(TYPO3_INSTALL_DB_PASSWORD)%'
+            port: ''
+            socket: ''
+            charset: 'utf8'
+SYS:
+    sitename: '%env(TYPO3_INSTALL_SITE_NAME)%'

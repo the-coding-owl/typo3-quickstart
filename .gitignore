@@ -1,6 +1,7 @@
 /vendor/
 /bin/
 .vagrant
+.env
 /private
 /web/typo3temp
 /web/fileadmin

@@ -2,14 +2,14 @@
 
 sudo apt-add-repository ppa:ondrej/php
 sudo apt -y update
-sudo apt y upgrade
+sudo apt -y upgrade
 
 # configure mysql to install in non-interactive mode
 echo "mysql-server mysql-server/root_password password Vagrant" | sudo debconf-set-selections
 echo "mysql-server mysql-server/root_password_again password Vagrant" | sudo debconf-set-selections
 
 #install php
-sudo apt -y install php7.1 php7.1-xml php7.1-zip php7.1-curl php7.1-mbstring php7.1-xdebug php7.1-gd php7.1-mysql php7.1-opcache mysql-server
+sudo apt -y install php7.1 php7.1-xml php7.1-zip php7.1-curl php7.1-mbstring php7.1-xdebug php7.1-gd php7.1-mysql php7.1-opcache mysql-server git
 sudo cp /vagrant/scripts/xdebug.ini /etc/php/7.1/mods-available/xdebug.ini
 sudo phpenmod xdebug
 

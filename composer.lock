@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b9847ab29dd4148a5f5ffc381fbabb52",
+    "content-hash": "4f626ef920e501cb167d230c3facff42",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -1733,8 +1733,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:the-coding-owl/typo3-autoinstaller.git",
-                "reference": "a3da1923ec5626d19d8add081bb06d0fc05503fd"
+                "url": "https://github.com/the-coding-owl/typo3-autoinstaller.git",
+                "reference": "e9b47f5d5575da7118fe20284a135f72aa5bfbc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/the-coding-owl/typo3-autoinstaller/zipball/e9b47f5d5575da7118fe20284a135f72aa5bfbc4",
+                "reference": "e9b47f5d5575da7118fe20284a135f72aa5bfbc4",
+                "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.1",
@@ -1751,8 +1757,9 @@
                     "TheCodingOwl\\Typo3Autoinstaller\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPLv3"
+                "GPL-3.0-or-later"
             ],
             "authors": [
                 {
@@ -1761,7 +1768,7 @@
                 }
             ],
             "description": "This package is build to do a automatic installation of the TYPO3 CMS without the need of the user to do the manual step by step installation via the web browser interface. It uses typo3-console to setup a full and functional instance of TYPO3 that can be used to build upon right away.",
-            "time": "2018-01-20T22:43:19+00:00"
+            "time": "2018-01-21T19:08:05+00:00"
         },
         {
             "name": "typo3/class-alias-loader",

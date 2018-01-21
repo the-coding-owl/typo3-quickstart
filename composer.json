@@ -34,12 +34,6 @@
             "web-dir": "web"
         }
     },
-    "repositories": {
-        "typo3-autoinstaller": {
-            "type": "git",
-            "url": "git@github.com:the-coding-owl/typo3-autoinstaller.git"
-        }
-    },
     "config": {
         "bin-dir": "bin"
     },

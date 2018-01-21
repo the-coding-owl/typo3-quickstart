@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f889eaa9b6c56b1a4727235b35218fc3",
+    "content-hash": "b9847ab29dd4148a5f5ffc381fbabb52",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -870,33 +870,33 @@
         },
         {
             "name": "helhum/typo3-composer-setup",
-            "version": "v0.3.3",
+            "version": "v0.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/helhum/typo3-composer-setup.git",
-                "reference": "cb427ad370ad188b65a173c4ce79a7a0216b7974"
+                "reference": "c2b55abc93eee9deea488ab0dc54eec8fba3996f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/helhum/typo3-composer-setup/zipball/cb427ad370ad188b65a173c4ce79a7a0216b7974",
-                "reference": "cb427ad370ad188b65a173c4ce79a7a0216b7974",
+                "url": "https://api.github.com/repos/helhum/typo3-composer-setup/zipball/c2b55abc93eee9deea488ab0dc54eec8fba3996f",
+                "reference": "c2b55abc93eee9deea488ab0dc54eec8fba3996f",
                 "shasum": ""
             },
             "require": {
-                "typo3/cms-backend": "^7.6 || ^8.7",
-                "typo3/cms-composer-installers": "^1.4",
-                "typo3/cms-core": "^7.6 || ^8.7",
-                "typo3/cms-cshmanual": "^7.6 || ^8.7",
-                "typo3/cms-extbase": "^7.6 || ^8.7",
-                "typo3/cms-extensionmanager": "^7.6 || ^8.7",
-                "typo3/cms-filelist": "^7.6 || ^8.7",
-                "typo3/cms-fluid": "^7.6 || ^8.7",
-                "typo3/cms-frontend": "^7.6 || ^8.7",
-                "typo3/cms-install": "^7.6 || ^8.7",
-                "typo3/cms-lang": "^7.6 || ^8.7",
-                "typo3/cms-recordlist": "^7.6 || ^8.7",
-                "typo3/cms-saltedpasswords": "^7.6 || ^8.7",
-                "typo3/cms-sv": "^7.6 || ^8.7"
+                "typo3/cms-backend": "^7.6 || ^8.7 || ~9.0.0",
+                "typo3/cms-composer-installers": "^1.4 || ^2.0",
+                "typo3/cms-core": "^7.6 || ^8.7 || ~9.0.0",
+                "typo3/cms-cshmanual": "^7.6 || ^8.7 || ~9.0.0",
+                "typo3/cms-extbase": "^7.6 || ^8.7 || ~9.0.0",
+                "typo3/cms-extensionmanager": "^7.6 || ^8.7 || ~9.0.0",
+                "typo3/cms-filelist": "^7.6 || ^8.7 || ~9.0.0",
+                "typo3/cms-fluid": "^7.6 || ^8.7 || ~9.0.0",
+                "typo3/cms-frontend": "^7.6 || ^8.7 || ~9.0.0",
+                "typo3/cms-install": "^7.6 || ^8.7 || ~9.0.0",
+                "typo3/cms-lang": "^7.6 || ^8.7 || ~9.0.0",
+                "typo3/cms-recordlist": "^7.6 || ^8.7 || ~9.0.0",
+                "typo3/cms-saltedpasswords": "^7.6 || ^8.7 || ~9.0.0",
+                "typo3/cms-sv": "^7.6 || ^8.7 || ~9.0.0"
             },
             "require-dev": {
                 "typo3-console/php-server-command": "^0.1.0",
@@ -937,7 +937,7 @@
                 }
             ],
             "description": "Set up required entry points for TYPO3 web directory",
-            "time": "2017-09-07T21:09:24+00:00"
+            "time": "2017-12-17T14:09:14+00:00"
         },
         {
             "name": "helhum/typo3-config-handling",
@@ -1130,62 +1130,6 @@
                 "typo3 console"
             ],
             "time": "2017-08-14T13:44:01+00:00"
-        },
-        {
-            "name": "helhum/typo3-secure-web",
-            "version": "v0.2.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/helhum/typo3-secure-web.git",
-                "reference": "9b1dc4e0b4700559b3fd051492014a21f218b249"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/helhum/typo3-secure-web/zipball/9b1dc4e0b4700559b3fd051492014a21f218b249",
-                "reference": "9b1dc4e0b4700559b3fd051492014a21f218b249",
-                "shasum": ""
-            },
-            "require": {
-                "helhum/typo3-composer-setup": ">=0.2.0 <=0.4"
-            },
-            "conflict": {
-                "typo3/cms": "<8.7.8",
-                "typo3/cms-core": "<8.7.8"
-            },
-            "require-dev": {
-                "typo3-console/php-server-command": "^0.1.0",
-                "typo3/cms": "dev-TYPO3_8-7 as 8.7.8"
-            },
-            "type": "library",
-            "extra": {
-                "typo3/cms": {
-                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
-                    "root-dir": "typo3",
-                    "web-dir": "web"
-                },
-                "helhum/typo3-console": {
-                    "install-extension-dummy": "0"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Helhum\\Typo3SecureWeb\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Helmut Hummel",
-                    "email": "info@helhum.io",
-                    "homepage": "https://helhum.io",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Set up secure TYPO3 web directory containing only public assets",
-            "time": "2017-10-26T13:03:53+00:00"
         },
         {
             "name": "mso/idna-convert",
@@ -1785,6 +1729,41 @@
             "time": "2018-01-03T07:37:34+00:00"
         },
         {
+            "name": "the-coding-owl/typo3-autoinstaller",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:the-coding-owl/typo3-autoinstaller.git",
+                "reference": "a3da1923ec5626d19d8add081bb06d0fc05503fd"
+            },
+            "require": {
+                "composer-plugin-api": "^1.1",
+                "helhum/dotenv-connector": "^2.0@dev",
+                "helhum/typo3-config-handling": "^0.2.1",
+                "helhum/typo3-console": "^5.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "TheCodingOwl\\Typo3Autoinstaller\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "TheCodingOwl\\Typo3Autoinstaller\\": "src/"
+                }
+            },
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Ditscheid",
+                    "email": "kevinditscheid@gmail.com"
+                }
+            ],
+            "description": "This package is build to do a automatic installation of the TYPO3 CMS without the need of the user to do the manual step by step installation via the web browser interface. It uses typo3-console to setup a full and functional instance of TYPO3 that can be used to build upon right away.",
+            "time": "2018-01-20T22:43:19+00:00"
+        },
+        {
             "name": "typo3/class-alias-loader",
             "version": "dev-master",
             "source": {
@@ -2330,6 +2309,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "helhum/dotenv-connector": 20,
+        "the-coding-owl/typo3-autoinstaller": 20,
         "cpsit/mask-export": 20,
         "friendsoftypo3/extension-builder": 20
     },

@@ -2,7 +2,6 @@
 
 sudo apt-add-repository ppa:ondrej/php
 sudo apt -y update
-sudo apt -y upgrade
 
 # configure mysql to install in non-interactive mode
 echo "mysql-server mysql-server/root_password password Vagrant" | sudo debconf-set-selections

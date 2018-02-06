@@ -1,0 +1,49 @@
+EXT:
+    extConf:
+        backend:
+            loginLogo: ''
+            loginHighlightColor: ''
+            loginBackgroundImage: ''
+            backendLogo: ''
+            backendFavicon: ''
+        easy_navigation:
+            mainNavigationDoktype: 124
+            metaNavigationDoktype: 125
+            footerNavigationDoktype: 126
+        extensionmanager:
+            automaticInstallation: 1
+            offlineMode: 0
+        indexed_search:
+            pdftools: '/usr/bin/'
+            pdf_mode: 20
+            unzip: '/usr/bin/'
+            catdoc: '/usr/bin/'
+            xlhtml: '/usr/bin/'
+            ppthtml: '/usr/bin/'
+            unrtf: '/usr/bin/'
+            debugMode: 0
+            fullTextDataLength: 0
+            disableFrontendIndexing: 0
+            enableMetaphoneSearch: 1
+            minAge: 24
+            maxAge: 0
+            maxExternalFiles: 5
+            useCrawlerForExternalFiles: 0
+            flagBitMask: 192
+            ignoreExtensions: ''
+            indexExternalURLs: 0
+            useMysqlFulltext: 0
+        rsaauth:
+            temporaryDirectory: ''
+        saltedpasswords:
+            'BE.':
+                saltedPWHashingMethod: 'TYPO3\\CMS\\Saltedpasswords\\Salt\\Pbkdf2Salt'
+                forceSalted: 0
+                onlyAuthService: 0
+                updatePasswd: 1
+            'FE.':
+                enabled: 1
+                saltedPWHashingMethod: 'TYPO3\\CMS\\Saltedpasswords\\Salt\\Pbkdf2Salt'
+                forceSalted: 0
+                onlyAuthService: 0
+                updatePasswd: 1

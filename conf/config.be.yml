@@ -1,0 +1,4 @@
+BE:
+    debug: false
+    explicitADmode: explicitAllow
+    loginSecurityLevel: rsa

@@ -1,14 +1,13 @@
 imports:
     - { resource: config.yml }
-    - { resource: dev.config.*.yml }
 
 SYS:
     displayErrors: '1'
     enableDeprecationLog: 'file'
     sqlDebug: '1'
+    exceptionalErrors: 28674
 MAIL:
     transport: 'mbox'
-    transport_mbox_file: '%env(TYPO3_PATH_COMPOSER_ROOT)%/log/mails.log'
 BE:
     debug: 'true'
 FE:

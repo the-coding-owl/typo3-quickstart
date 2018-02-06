@@ -2,7 +2,7 @@
     "name": "the-coding-owl/typo3-quickstart",
     "description": "A composer package to quickstart TYPO3 projects. It comes equipped with an autoinstaller and a Vagrant configuration, so the machine has just to be started to begin development.",
     "type": "project",
-    "license": "GPL3v3",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Kevin Ditscheid",
@@ -10,21 +10,16 @@
         }
     ],
     "require": {
-        "typo3/cms-core": "~8.7.8",
-        "typo3/cms-belog": "~8.7.8",
-        "typo3/cms-beuser": "~8.7.8",
-        "typo3/cms-context-help": "~8.7.8",
-        "typo3/cms-lowlevel": "~8.7.8",
-        "typo3/cms-reports": "~8.7.8",
-        "typo3/cms-setup": "~8.7.8",
-        "helhum/typo3-console": "^5.0",
-        "helhum/typo3-config-handling": "^0.2.1",
-        "helhum/dotenv-connector": "^2.0@dev",
-        "the-coding-owl/typo3-autoinstaller": "dev-master"
+        "typo3/cms-core": "^8.7",
+        "typo3-console/composer-auto-setup": "^0.3.6",
+        "helhum/typo3-config-handling": "^0.4.1",
+        "helhum/dotenv-connector": "^2.0",
+        "the-coding-owl/kd-base": "dev-master"
     },
+    "minimum-stability": "dev",
     "extra": {
         "helhum/typo3-config-handling": {
-            "ext-config": "conf/config.extension.yml"
+            "ext-config": "conf/config.extensions.yml"
         },
         "helhum/typo3-console": {
             "install-extension-dummy": false
@@ -37,7 +32,6 @@
     "config": {
         "bin-dir": "bin"
     },
-    "minimum-stability": "dev",
     "require-dev": {
         "cpsit/mask-export": "dev-master",
         "friendsoftypo3/extension-builder": "dev-master"

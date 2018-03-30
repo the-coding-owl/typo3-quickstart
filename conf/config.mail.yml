@@ -1,10 +1,5 @@
 MAIL:
-    transport: '%env(TYPO3_MAIL_TRANSPORT)%'
-    transport_sendmail_command: '%env(TYPO3_MAIL_TRANSPORT_SENDMAIL_COMMAND)%'
-    transport_smtp_encrypt: '%env(TYPO3_MAIL_TRANSPORT_SMTP_ENCRYPT)%'
-    transport_smtp_password: '%env(TYPO3_MAIL_TRANSPORT_SMTP_PASSWORD)%'
-    transport_smtp_server: '%env(TYPO3_MAIL_TRANSPORT_SMTP_SERVER)%'
-    transport_smtp_username: '%env(TYPO3_MAIL_TRANSPORT_SMTP_USERNAME)%'
     transport_mbox_file: '%env(TYPO3_PATH_COMPOSER_ROOT)%/log/mails.log'
-    defaultMailAddress: '%env(TYPO3_MAIL_DEFAULT_MAIL_ADDRESS)%'
-    defaultMailFromName: '%env(TYPO3_MAIL_DEFAULT_MAIL_FROM_NAME)%'
+    defaultMailAddress: 'admin@example.com'
+    defaultMailFromName: 'John Doe'
+    transport_sendmail_command: '/usr/sbin/sendmail -t -i '

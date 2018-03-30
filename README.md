@@ -18,9 +18,6 @@ https://github.com/TYPO3/TYPO3.CMS/blob/master/INSTALL.md
 You also need a local composer to be able to install all required packages for this project.
 You can download composer from https://getcomposer.org/
 Please read their documentations on how to use composer first.
-For database connection, you need to enable the configured database connection in `Environment/Default/database` to be
-able to establish a connection to your local MySQL server by either change the credentials to a already configured user of your
-MySQL instance, or create a user with the predefined credentials.
 
 ## Read further
 I highly recommend to read documentation to the used and recommended software of this project, therefore I provide

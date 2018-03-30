@@ -1,2 +1,4 @@
 imports:
-    - { resource: config.*.yml }
+    - { resource: 'DefaultConfiguration', type: typo3 }
+    - { resource: 'config.*.yml', type: glob }
+    - { resource: 'host.yml', type: glob, ignore_errors: true }

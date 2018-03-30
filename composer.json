@@ -10,15 +10,20 @@
         }
     ],
     "require": {
-        "typo3/cms-core": "^8.7",
+        "typo3/cms-core": "~8.7",
         "typo3-console/composer-auto-setup": "^0.3.6",
         "helhum/typo3-config-handling": "^0.4.1",
         "helhum/dotenv-connector": "^2.0",
-        "the-coding-owl/kd-base": "dev-master"
+        "helhum/typo3-secure-web": "^0.2.7",
+        "cweagans/composer-patches": "~1.0"
     },
-    "minimum-stability": "dev",
+    "require-dev": {
+        "cpsit/mask-export": "~0.9",
+        "friendsoftypo3/extension-builder": "~8.7"
+    },
     "extra": {
         "helhum/typo3-config-handling": {
+            "dev-config": "conf/dev.config.yml",
             "ext-config": "conf/config.extensions.yml"
         },
         "helhum/typo3-console": {
@@ -26,14 +31,11 @@
         },
         "typo3/cms": {
             "cms-package-dir": "{$vendor-dir}/typo3/cms",
-            "web-dir": "web"
+            "web-dir": "web",
+            "root-dir": "typo3src"
         }
     },
     "config": {
         "bin-dir": "bin"
-    },
-    "require-dev": {
-        "cpsit/mask-export": "dev-master",
-        "friendsoftypo3/extension-builder": "dev-master"
     }
 }

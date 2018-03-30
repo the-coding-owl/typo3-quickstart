@@ -5,5 +5,5 @@ GFX:
     processor_colorspace: sRGB
     processor_effects: 1
     processor_enabled: true
-    processor_path: '%env(TYPO3_GFX_PROCESSOR_PATH)%'
-    processor_path_lzw: '%env(TYPO3_GFX_PROCESSOR_PATH)%'
+    processor_path: '/usr/bin/'
+    processor_path_lzw: '/usr/bin/'

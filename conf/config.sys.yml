@@ -1,17 +1,9 @@
 SYS:
-    caching:
-        cacheConfigurations:
-            extbase_object:
-                backend: 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend'
-                frontend: 'TYPO3\\CMS\\Core\\Cache\\Frontend\\VariableFrontend'
-                groups:
-                    - { system }
-                options:
-                    defaultLifetime: 0
     devIPmask: '*'
     displayErrors: false
     enableDeprecationLog: false,
     exceptionalErrors: 0
     sqlDebug: false
     systemLogLevel: 0
-    sitename: '%env(TYPO3_INSTALL_SITE_NAME)%'
+    sitename: 'TYPO3 Site'
+    trustedHostsPattern: '.*'

@@ -6,9 +6,27 @@ SYS:
     enableDeprecationLog: 'file'
     sqlDebug: '1'
     exceptionalErrors: 28674
+    trustedHostsPattern: '.*'
+    sitename: '[DEV]TYPO3 Site'
+    encryptionKey: '%env(TYPO3_ENCRYPTION_KEY)%'
 MAIL:
     transport: 'mbox'
 BE:
     debug: 'true'
+    installToolPassword: '%env(TYPO3_INSTALL_TOOL_PASSWORD)%'
 FE:
     debug: 'true'
+DB:
+    Connections:
+        Default:
+            dbname: '%env(TYPO3_INSTALL_DB_NAME)%'
+            driver: mysqli
+            host: localhost
+            user: '%env(TYPO3_INSTALL_DB_USER)%'
+            password: '%env(TYPO3_INSTALL_DB_PASSWORD)%'
+            port: 3306
+            socket: ''
+            charset: utf8
+GFX:
+    processor_path: ''
+    processor_path_lzw: ''

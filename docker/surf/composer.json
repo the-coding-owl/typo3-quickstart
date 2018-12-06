@@ -1,0 +1,24 @@
+{
+    "name": "the-coding-owl/surf",
+    "description": "Deployment script of the-coding-owl.de",
+    "type": "project",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Kevin Ditscheid",
+            "email": "kevinditscheid@gmail.com"
+        }
+    ],
+    "require": {
+        "typo3/surf": "^2.0.0"
+    },
+    "minimum-stability": "beta",
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "TheCodingOwl\\Surf\\": ".surf/src/"
+        }
+    }
+}

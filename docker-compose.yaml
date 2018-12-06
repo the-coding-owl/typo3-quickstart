@@ -1,0 +1,42 @@
+version: "3.7"
+services:
+    web:
+        container_name: typo3-quickstart_web
+        build:
+            context: .
+            dockerfile: docker/server.Dockerfile
+        restart: always
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - .:/var/www/html
+        links:
+            - db:database
+        depends_on:
+          - db
+          - composer
+    db:
+        image: mysql
+        command: --default-authentication-plugin=mysql_native_password
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: typo3
+        ports:
+            - "3306:3306"
+        volumes:
+            - mysqlDb:/var/lib/mysql
+    composer:
+        container_name: typo3-quickstart_composer
+        build:
+            context: .
+            dockerfile: docker/composer.Dockerfile
+        restart: always
+        volumes:
+            - .:/app
+        depends_on:
+            - db
+        links:
+            - db:database
+volumes:
+    mysqlDb:

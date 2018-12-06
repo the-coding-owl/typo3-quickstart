@@ -21,7 +21,7 @@ DB:
         Default:
             dbname: '%env(TYPO3_INSTALL_DB_NAME)%'
             driver: mysqli
-            host: localhost
+            host: '%env(TYPO3_INSTALL_DB_HOST)%'
             user: '%env(TYPO3_INSTALL_DB_USER)%'
             password: '%env(TYPO3_INSTALL_DB_PASSWORD)%'
             port: 3306

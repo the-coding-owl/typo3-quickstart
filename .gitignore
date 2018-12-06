@@ -3,6 +3,6 @@
 .vagrant
 .env
 /private
-/typo3src
-/web
+/public
 /log
+.idea

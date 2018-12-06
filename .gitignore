@@ -1,6 +1,5 @@
 /vendor/
 /bin/
-.vagrant
 .env
 /private
 /public

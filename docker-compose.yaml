@@ -31,7 +31,6 @@ services:
         build:
             context: .
             dockerfile: docker/composer.Dockerfile
-        restart: always
         volumes:
             - .:/app
         depends_on:
